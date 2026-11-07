@@ -140,9 +140,6 @@ python -m kubeops.pipeline --input data/raw/ --output results/
 
 Issues and suggestions are welcome. Please open an issue on the [issues page](https://github.com/ayayoussfiii/KubeOps-AI/issues).
 
-## Author
-
-**Aya Youssfi**, engineering student in AI and Digital Trust, ENSA Fès
 
 - LinkedIn: [aya-youssfi-](https://www.linkedin.com/in/aya-youssfi-)
 - GitHub: [@ayayoussfiii](https://github.com/ayayoussfiii)
