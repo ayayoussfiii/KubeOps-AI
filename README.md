@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-"# KubeOps-AI" 
-"# CyberGuard" 
-=======
+
 <h1 align="center">KubeOps-AI</h1>
 <p align="center">
   <b>From noisy event logs to explainable, uncertainty-calibrated remediation</b><br>
