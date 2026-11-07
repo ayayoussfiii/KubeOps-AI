@@ -19,7 +19,7 @@ LLM Fine-Tuning (QLoRA): Integrates parameter-efficient fine-tuned LLMs to under
 
 Explainable AI (XAI) & Uncertainty Calibration: Leverages Conformal Prediction via the MAPIE library to evaluate the statistical uncertainty of the generated predictions, ensuring high reliability for decision support.
 
-🛠️ Tech Stack
+Tech Stack
 
 Core: Python
 
@@ -31,7 +31,7 @@ Explainability (XAI): MAPIE (Conformal Prediction)
 
 Data Processing: Pandas, NetworkX
 
-🚀 Quick Start
+ Quick Start
 
 Prerequisites
 
@@ -58,7 +58,7 @@ Install dependencies:
 pip install -r requirements.txt
 
 
-📊 Dataset
+ Dataset
 
 This project utilizes datasets inspired by the GAIA (Graph-based Artificial Intelligence Analysis) IT operations logs. Due to privacy and size constraints, raw datasets are not included in this repository.
 
@@ -87,8 +87,6 @@ Feel free to check the issues page.
 
 
 
-LinkedIn: aya-youssfi-
 
-GitHub: @ayayoussfiii
 
 Built as part of an applied research engineering project.
