@@ -1,13 +1,13 @@
 
-🚀 KubeOps-AI: Intelligent Log Analysis & Remediation
+KubeOps-AI: Intelligent Log Analysis & Remediation
 
-📖 Overview
+ Overview
 
 KubeOps-AI is an applied research Proof of Concept (PoC) designed to bridge the gap between retrospective root-cause analysis and prospective system remediation.
 
 By analyzing highly heterogeneous and noisy digital traces (event logs), KubeOps-AI couples Graph Neural Networks (GNNs) with Agentic Large Language Models (LLMs). It reconstructs behavioral models from raw IT logs, identifies the root causes of system failures, and automatically generates reliable, uncertainty-calibrated remediation strategies.
 
-✨ Key Features
+ Key Features
 
 Causal Graph Extraction: Transforms raw, noisy event logs (e.g., GAIA datasets) into structured behavioral graphs.
 
@@ -64,7 +64,7 @@ This project utilizes datasets inspired by the GAIA (Graph-based Artificial Inte
 
 Place your formatted .csv or .json log files in the data/raw/ directory before running the pipeline.
 
-🧠 Pipeline Architecture
+ Pipeline Architecture
 
 Data Ingestion: Parses noisy as-is event logs.
 
@@ -80,14 +80,12 @@ Remediation Agent: Uses QLoRA fine-tuned LLM to propose a to-be fix.
 
 Uncertainty Output: MAPIE wraps the prediction to provide a confidence interval (Conformal Prediction).
 
-🤝 Contributing
+ Contributing
 
 Contributions, issues, and feature requests are welcome!
 Feel free to check the issues page.
 
-👩‍💻 Author
 
-Aya YOUSSFI
 
 LinkedIn: aya-youssfi-
 
