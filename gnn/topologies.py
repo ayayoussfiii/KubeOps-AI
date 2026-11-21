@@ -16,8 +16,13 @@ def make_scenario(rng, n, edges):
     root_lat = rng.normal(5000, 800)
     weak = rng.random() < 0.5
     x[root] = [rng.normal(55, 15) if weak else rng.normal(95, 5), root_lat, rng.normal(4.5, 1.5)]
+    dist = nx.single_source_shortest_path_length(G.reverse(), root)
     for a in anc:
-        x[a] = [rng.normal(45, 12), root_lat * rng.uniform(0.7, 1.4), rng.normal(3.5, 1.5)]
+        lat = root_lat * (0.8 ** (dist[a] - 1)) * rng.uniform(0.6, 1.3)
+        if rng.random() < 0.25:                      # service amont sans aucun symptome
+            x[a] = [rng.normal(40, 10), rng.normal(20, 6), rng.normal(0.2, 0.1)]
+        else:
+            x[a] = [rng.normal(45, 12), lat, rng.normal(3.5, 1.5)]
     others = [v for v in range(n) if v != root and v not in anc]
     if others and rng.random() < 0.3:                # distracteur : CPU haute sans etre la cause
         d = int(rng.choice(others)); x[d, 0] = rng.normal(90, 8); x[d, 2] = rng.normal(3.0, 1.0)
