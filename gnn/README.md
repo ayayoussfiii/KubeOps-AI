@@ -65,3 +65,13 @@ Les deux méthodes concordent à moins d'un point. Sur un seul découpage, la co
 - Les ensembles de prédiction ont une taille de 0 ou 1, jamais 2 : le modèle est très sûr ou pas du tout. La règle d'escalade revient donc à « ensemble vide ».
 - Pas de classe « système sain » : un système sain donne en pratique un ensemble vide, donc une escalade.
 - Avec des données moins faciles, il faudra recalibrer et réévaluer.
+
+## Comparaison avec des baselines sans graphe (données simulées, un découpage)
+
+| Modèle | Précision test |
+|---|---|
+| Régression logistique (15 variables à plat) | 1,000 |
+| Random forest (15 variables à plat) | 1,000 |
+| GNN (GCN) | 0,987 |
+
+Sur ces données, le graphe n'apporte rien : la cause racine se lit dans l'ensemble des nœuds à forte latence, que les baselines apprennent aussi bien. Le simulateur est trop facile pour mesurer l'intérêt de la structure du graphe. Prochaine étape : un jeu de données plus difficile (bruit, métriques manquantes, topologies variées).
