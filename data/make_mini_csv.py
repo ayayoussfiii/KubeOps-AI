@@ -12,11 +12,11 @@ rows, sid = [], 0
 for root in NODES:
     upstream = nx.ancestors(G, root)
     others = [n for n in NODES if n != root and n not in upstream]
-    for _ in range(40):
+    for _ in range(150):
         sid += 1
         weak_cpu = rng.random() < 0.5
         distractor = rng.choice(NODES[:0] + [n for n in NODES if n != root]) if rng.random() < 0.3 else None
-        for _t in range(5):
+        for _t in range(2):
             row = {"scenario_id": sid, "Root_Cause": root}
             root_lat = rng.normal(5000, 500)
             for n in NODES:
