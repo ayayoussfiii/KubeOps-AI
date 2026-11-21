@@ -3,3 +3,4 @@ __pycache__/
 data/mini_incidents.csv
 gnn/model.pt
 gnn/splits.npz
+gnn/conformal.json
